@@ -24,9 +24,8 @@ allprojects {
 }
 
 
-System.out.print("${paramString}")
-System.out.print("${paramText}")
-System.out.print("${paramRun}")
+System.out.println("=========  ${paramString}")
+System.out.println("========== ${paramText}")
 
 task clean(type: Delete) {
     delete rootProject.buildDir
