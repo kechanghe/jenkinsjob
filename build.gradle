@@ -27,6 +27,8 @@ allprojects {
 System.out.println("=========  ${paramString}")
 System.out.println("========== ${paramText}")
 
+System.out.println(System.getenv().get("paramString","defa"))
+
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
