@@ -23,6 +23,11 @@ allprojects {
     }
 }
 
+
+System.out.print("${paramString}")
+System.out.print("${paramText}")
+System.out.print("${paramRun}")
+
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
