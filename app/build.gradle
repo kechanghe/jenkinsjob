@@ -25,17 +25,13 @@ android {
         }
 
         release {
-            keyAlias "\"${System.getenv().get("key_alias")}\""
-            keyPassword "\"${System.getenv().get("key_password")}\""
-            storeFile file("/Users/kechanghe/keystore.jks")
-            storePassword "\"${System.getenv().get("store_password")}\""
+
         }
     }
 
     buildTypes {
         release {
             minifyEnabled false
-            signingConfig signingConfigs.release
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }

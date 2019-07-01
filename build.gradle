@@ -5,7 +5,7 @@ buildscript {
     repositories {
         google()
         jcenter()
-        
+
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.4.1'
@@ -19,7 +19,7 @@ allprojects {
     repositories {
         google()
         jcenter()
-        
+
     }
 }
 
@@ -28,8 +28,9 @@ System.out.println("=========  ${paramString}")
 System.out.println("========== ${paramText}")
 System.out.println("========= hasProperts: ${rootProject.paramText}")
 
-System.out.println("hash paramString"+System.getenv().containsKey("paramString"))
+System.out.println("hash paramString" + System.getenv().containsKey("paramString"))
 System.out.println(System.getenv().get("paramString"))
+System.out.println(System.getProperty("paramString", "dddd"))
 
 
 task clean(type: Delete) {
