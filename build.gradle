@@ -30,8 +30,7 @@ System.out.println("========= hasProperts: ${rootProject.paramText}")
 
 System.out.println("hash paramString" + System.getenv().containsKey("paramString"))
 System.out.println(System.getenv().get("paramString"))
-System.out.println(System.getProperty("paramString", "dddd"))
-
+System.out.println("has property:"+rootProject.hasProperty("paramText")+"   value:"+rootProject.getProperties().get("paramText"))
 
 task clean(type: Delete) {
     delete rootProject.buildDir
