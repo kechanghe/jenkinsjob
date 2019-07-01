@@ -28,6 +28,7 @@ System.out.println("=========  ${paramString}")
 System.out.println("========== ${paramText}")
 System.out.println("========= hasProperts: ${rootProject.paramText}")
 
+System.out.println("hash paramString"+System.getenv().hasProperty("paramString"))
 System.out.println(System.getenv().get("paramString"))
 
 
