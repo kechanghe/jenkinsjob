@@ -24,15 +24,7 @@ allprojects {
 }
 
 
-System.out.println("=========  ${paramString}")
-System.out.println("========== ${paramText}")
-System.out.println("========= hasProperts: ${rootProject.paramText}")
-
-System.out.println("hash paramString" + System.getenv().containsKey("paramString"))
-System.out.println(System.getenv().get("paramString"))
-System.out.println("has property:"+rootProject.hasProperty("paramText")+"   value:"+rootProject.getProperties().get("paramText"))
-
-System.out.println("========BUILD_NUMBER:"+System.getenv().get("BUILD_NUMBER"))
+System.out.println("========paramString:"+project.paramString)
 
 task clean(type: Delete) {
     delete rootProject.buildDir
