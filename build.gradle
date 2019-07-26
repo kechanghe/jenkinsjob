@@ -24,7 +24,7 @@ allprojects {
 }
 
 
-System.out.println("========paramString:"+project.paramString)
+System.out.println("========paramString3333:"+project.paramString)
 
 task clean(type: Delete) {
     delete rootProject.buildDir
